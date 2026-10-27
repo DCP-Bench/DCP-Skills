@@ -1,0 +1,19 @@
+# One file per upstream repository whose skills this catalog mirrors.
+# scripts/sync.py reads every sources/*.yml; the file name is the source's id.
+
+repo: DCP-Bench/DCP-Rosetta
+ref: main
+
+# Skill folders to mirror, as globs relative to the repository root. Each match
+# must hold a SKILL.md; it is copied to skills/<folder name>/.
+include:
+  - solvers/*/skills/*
+
+# Folders matched above that are not published, each with the reason.
+exclude: []
+#  - path: solvers/<solver>/skills/<name>
+#    reason: why it stays out of the public catalog
+
+# Optional: a JSON list of {id, name} naming the values of metadata.paradigm,
+# used as the section headings of the README catalog.
+paradigms: solvers/paradigms.json
