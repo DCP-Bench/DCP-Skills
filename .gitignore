@@ -1,2 +1,4 @@
 __pycache__/
 .venv/
+# Report the lychee action writes by default.
+lychee/
