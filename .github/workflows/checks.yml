@@ -30,7 +30,13 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Internal links and anchors resolve
+        id: links
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           args: --offline --no-progress --include-fragments 'README.md' 'CONTRIBUTING.md' 'skills/**/*.md'
+          output: ${{ runner.temp }}/lychee.md
+          jobSummary: false
           fail: true
+      - name: Write the link check report
+        if: ${{ !cancelled() && steps.links.outcome != 'skipped' }}
+        run: scripts/link-report.sh internal "$RUNNER_TEMP/lychee.md" >> "$GITHUB_STEP_SUMMARY"

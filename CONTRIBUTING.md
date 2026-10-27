@@ -49,6 +49,10 @@ which skill to fix upstream.
   - an internal link or anchor is broken
 - **`links.yml`** checks external links weekly and opens an issue for broken ones.
 
+Each link check writes its report, the lychee table with a note on what was checked and
+how to read it, to the run's summary page; `links.yml` also puts it in the issue. The
+note comes from `scripts/link-report.sh`.
+
 A failing skill is fixed upstream, then synced.
 
 ## Adding a source
