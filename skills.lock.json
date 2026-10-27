@@ -156,9 +156,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-pumpkin": {
-      "commit": "2df816fb3fd81ec6f63cd535bd8a9e0930af5233",
+      "commit": "b41240bbcc285b7e6ce8fb548e99b179a1789fce",
       "commit_date": "2026-10-27",
-      "digest": "sha256:e77151a86ff8a427a32f5d00a231f604982c8677ed7333b7d073794a0d17ff9c",
+      "digest": "sha256:9f8079ed8451d3b7b933fd786d8250f9f27190a40372e7d18d5c88eb4d9c0890",
       "path": "solvers/pumpkin/skills/dcp-pumpkin",
       "source": "dcp-rosetta"
     },
@@ -207,7 +207,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "2df816fb3fd81ec6f63cd535bd8a9e0930af5233",
+      "commit": "b41240bbcc285b7e6ce8fb548e99b179a1789fce",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
