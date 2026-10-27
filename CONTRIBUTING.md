@@ -55,3 +55,12 @@ A failing skill is fixed upstream, then synced.
 
 Add `sources/<id>.yml`, using [`sources/dcp-rosetta.yml`](sources/dcp-rosetta.yml) as the
 template. Skill names must be unique across all sources and start with `dcp-`.
+
+## Releases
+
+`main` is always installable, and installs follow it. To give users a fixed point to pin,
+run the Release workflow from the Actions tab. It tags `main` as `vYYYY.MM.N` (CalVer, with
+N counting from 0 within the month). The release notes list the skills added, changed and
+removed since the previous release, each linked to its upstream diff. A skill has no version
+of its own; `skills.lock.json` at a tag says exactly which upstream commit each skill came
+from.
