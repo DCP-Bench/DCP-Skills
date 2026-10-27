@@ -9,6 +9,7 @@
 - each folder's content digest matches the lock, so nothing was edited by hand
 - no entry was synced from uncommitted upstream changes
 - each skill's frontmatter name equals its folder name and starts with the prefix
+- the plugin marketplace is the one the sync writes for this lock
 
 The format of each skill is checked separately, with skills-ref (see CI).
 
@@ -18,13 +19,16 @@ The format of each skill is checked separately, with skills-ref (see CI).
 import json
 import sys
 
-from sync import LOCK, SKILLS, digest, frontmatter
+from sync import LOCK, MARKETPLACE, SKILLS, digest, frontmatter, marketplace
 
 PREFIX = "dcp-"
 
 
 def problems():
-    lock = json.loads(LOCK.read_text())["skills"]
+    full = json.loads(LOCK.read_text())
+    lock = full["skills"]
+    if not MARKETPLACE.exists() or json.loads(MARKETPLACE.read_text()) != marketplace(full):
+        yield f"{MARKETPLACE.relative_to(MARKETPLACE.parent.parent)}: out of date; run the sync"
     folders = {path.name for path in SKILLS.iterdir() if path.is_dir()}
     for name in sorted(folders - set(lock)):
         yield f"skills/{name}: not in skills.lock.json; skills are added by scripts/sync.py, not by hand"

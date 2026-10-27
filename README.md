@@ -18,6 +18,12 @@ npx skills add DCP-Bench/skills                    # pick from the list
 npx skills add DCP-Bench/skills --skill dcp-cpmpy  # one skill
 ```
 
+In Claude Code, as a plugin holding all the skills:
+
+```console
+/plugin install dcp-solvers --marketplace DCP-Bench/skills
+```
+
 Or copy a folder from `skills/` into your agent's skills directory, for example
 `.agents/skills/` or `.claude/skills/`.
 

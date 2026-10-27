@@ -8,7 +8,8 @@
 For every sources/<id>.yml this clones the repository (or uses a local checkout,
 --local <id>=<path>), copies each matched skill folder verbatim to skills/<name>/,
 removes the skills of that source that disappeared upstream, and rewrites
-skills.lock.json (where each skill came from) and the catalog table in README.md.
+skills.lock.json (where each skill came from), the catalog table in README.md and
+the plugin marketplace in .claude-plugin/.
 
 Nothing in skills/ is edited by hand: a fix belongs in the upstream repository.
 The lock holds no timestamps, so a run with nothing new upstream changes nothing.
@@ -34,6 +35,7 @@ SOURCES = ROOT / "sources"
 SKILLS = ROOT / "skills"
 LOCK = ROOT / "skills.lock.json"
 README = ROOT / "README.md"
+MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
 CATALOG_START, CATALOG_END = "<!-- catalog:start -->", "<!-- catalog:end -->"
 # More removals than this in one run is more likely a broken source than a real
 # change upstream; it needs --allow-removals.
@@ -151,6 +153,24 @@ def write_readme(text):
     README.write_text(f"{readme[:start]}\n{text}\n{readme[end:]}", encoding="utf-8")
 
 
+def marketplace(lock):
+    """The Claude Code plugin marketplace: one plugin holding every skill. It has no
+    version, so an installed plugin follows this repository's commits."""
+    return {
+        "name": "dcp-bench",
+        "owner": {"name": "DCP-Bench"},
+        "metadata": {"description": "Agent skills for constraint and optimisation solvers, from DCP-Bench"},
+        "plugins": [{
+            "name": "dcp-solvers",
+            "description": "One skill per solver: install it, model with it from each of its language "
+                           "interfaces, solve, and read the results",
+            "source": "./",
+            "strict": False,
+            "skills": [f"./skills/{name}" for name in sorted(lock["skills"])],
+        }],
+    }
+
+
 def sync(local, allow_removals):
     old = json.loads(LOCK.read_text()) if LOCK.exists() else {"schema": 1, "sources": {}, "skills": {}}
     lock = {"schema": 1, "sources": {}, "skills": {}}
@@ -189,6 +209,8 @@ def sync(local, allow_removals):
 
     LOCK.write_text(json.dumps(lock, indent=2, sort_keys=True) + "\n")
     write_readme(catalog(lock, labels))
+    MARKETPLACE.parent.mkdir(exist_ok=True)
+    MARKETPLACE.write_text(json.dumps(marketplace(lock), indent=2) + "\n")
     return old, lock, changes
 
 
