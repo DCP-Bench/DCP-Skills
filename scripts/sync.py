@@ -91,8 +91,12 @@ def read_source(source_id, config, repo):
     for path in excluded - {path for path, _ in found.values()}:
         if not (repo / path).is_dir():
             print(f"warning: {source_id}: excluded path {path} no longer exists", file=sys.stderr)
-    entry = {"repo": config["repo"], "ref": config.get("ref", "main"), "commit": git(repo, "rev-parse", "HEAD").strip()}
-    if git(repo, "status", "--porcelain", "--", *config["include"]).strip():
+    # The last commit that touched what is published, not HEAD: the source moves on
+    # without its skills changing, and that must not change the lock.
+    paths = list(config["include"]) + ([config["paradigms"]] if config.get("paradigms") else [])
+    entry = {"repo": config["repo"], "ref": config.get("ref", "main"),
+             "commit": git(repo, "log", "-1", "--format=%H", "--", *paths).strip()}
+    if git(repo, "status", "--porcelain", "--", *paths).strip():
         entry["dirty"] = True
     return found, entry
 
@@ -185,7 +189,29 @@ def sync(local, allow_removals):
 
     LOCK.write_text(json.dumps(lock, indent=2, sort_keys=True) + "\n")
     write_readme(catalog(lock, labels))
-    return lock, changes
+    return old, lock, changes
+
+
+def summary(old, lock, changes):
+    """A Markdown account of a sync for its pull request: each change links to the
+    upstream diff (or history) of that skill."""
+    def link(entry, before=None):
+        repo = lock["sources"].get(entry["source"], old["sources"].get(entry["source"], {})).get("repo")
+        if before and before.get("commit") and entry.get("commit"):
+            return f"https://github.com/{repo}/compare/{before['commit']}...{entry['commit']}"
+        return f"https://github.com/{repo}/commits/{entry.get('commit') or 'HEAD'}/{entry['path']}"
+    lines = []
+    for kind, names in changes.items():
+        if names:
+            lines += [f"### {kind.capitalize()}", ""]
+            for name in names:
+                entry = lock["skills"].get(name) or old["skills"][name]
+                before = old["skills"].get(name) if kind == "changed" else None
+                lines.append(f"- [`{name}`]({link(entry, before)}) from `{entry['path']}`")
+            lines.append("")
+    sources = ", ".join(f"[{source['repo']}](https://github.com/{source['repo']}/commit/{source['commit']}) "
+                        f"at `{source['commit'][:12]}`" for source in lock["sources"].values())
+    return "\n".join(lines + [f"Synced from {sources}.", ""])
 
 
 def main():
@@ -194,10 +220,12 @@ def main():
                         help="read source ID from a local checkout instead of cloning it")
     parser.add_argument("--allow-removals", action="store_true",
                         help=f"remove more than {MAX_REMOVALS} skills in one run")
+    parser.add_argument("--summary", type=Path, metavar="FILE",
+                        help="write a Markdown summary of the changes, and a title as its first line")
     args = parser.parse_args()
     local = dict(item.split("=", 1) for item in args.local)
     try:
-        lock, changes = sync(local, args.allow_removals)
+        old, lock, changes = sync(local, args.allow_removals)
     except (SyncError, subprocess.CalledProcessError) as error:
         sys.exit(f"sync failed: {getattr(error, 'stderr', None) or error}")
     for kind, names in changes.items():
@@ -207,6 +235,9 @@ def main():
     if dirty:
         print(f"warning: synced uncommitted upstream changes: {', '.join(dirty)}", file=sys.stderr)
     print(f"{len(lock['skills'])} skills from {len(lock['sources'])} source(s)")
+    if args.summary:
+        counts = ", ".join(f"{len(names)} {kind}" for kind, names in changes.items() if names) or "no changes"
+        args.summary.write_text(f"Sync skills: {counts}\n{summary(old, lock, changes)}")
 
 
 if __name__ == "__main__":

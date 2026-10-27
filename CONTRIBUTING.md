@@ -32,6 +32,14 @@ make links                               # internal links and anchors (needs Doc
 A skill synced from uncommitted upstream changes is marked `"dirty": true` in the lock, and
 `make check` fails on it.
 
+## Sync pull requests
+
+`sync.yml` runs daily, and on demand from the Actions tab. When upstream changed, it opens one
+pull request on `automated/sync-skills`, or updates the open one. The PR links each changed
+skill to its upstream diff. The same checks as `checks.yml` run before the PR is opened.
+Review the PR and merge it. A sync that fails its checks opens no PR; the failed run shows
+which skill to fix upstream.
+
 ## Checks
 
 - **`checks.yml`** runs on every PR and every push to main. It fails when:
