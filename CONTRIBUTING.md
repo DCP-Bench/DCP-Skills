@@ -20,14 +20,28 @@ what it is.
 - Because the lock holds no timestamps, rerunning the sync with nothing new upstream changes
   nothing.
 
-To run the sync locally against a checkout of the source:
+`make` lists the commands. CI runs the same ones.
 
 ```console
-uv run scripts/sync.py --local dcp-rosetta=../DCP-Rosetta
+make sync                                # clone the sources from GitHub and mirror them
+make sync LOCAL=dcp-rosetta=../DCP-Rosetta   # or mirror a local checkout
+make check                               # skills/ matches the lock, and every skill follows the spec
+make links                               # internal links and anchors (needs Docker)
 ```
 
-Without `--local`, the script clones the source from GitHub. A skill synced from
-uncommitted upstream changes is marked `"dirty": true` in the lock. Don't merge such a sync.
+A skill synced from uncommitted upstream changes is marked `"dirty": true` in the lock, and
+`make check` fails on it.
+
+## Checks
+
+- **`checks.yml`** runs on every PR and every push to main. It fails when:
+  - `skills/` differs from `skills.lock.json`: a folder was edited, added or removed by hand
+  - a skill doesn't pass [`skills-ref validate`](https://github.com/agentskills/agentskills)
+  - a skill's name doesn't match its folder or lacks the `dcp-` prefix
+  - an internal link or anchor is broken
+- **`links.yml`** checks external links weekly and opens an issue for broken ones.
+
+A failing skill is fixed upstream, then synced.
 
 ## Adding a source
 
