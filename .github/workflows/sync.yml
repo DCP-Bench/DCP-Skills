@@ -1,0 +1,63 @@
+# Mirrors the skills from the sources in sources/ and opens (or updates) one pull
+# request with the changes, on the branch automated/sync-skills. A person
+# reviews and merges it. With nothing new upstream the sync changes nothing,
+# and no pull request is opened.
+#
+# A pull request opened with GITHUB_TOKEN does not trigger checks.yml, so this
+# job runs the same checks before opening it. The repository setting "Allow
+# GitHub Actions to create and approve pull requests" must be on.
+
+name: Sync
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+
+      - name: Mirror the skills
+        run: uv run -q scripts/sync.py --summary "$RUNNER_TEMP/summary.md"
+
+      - name: skills/ matches skills.lock.json
+        run: make lock
+      - name: Skills follow the Agent Skills specification
+        run: make spec
+      - name: Internal links and anchors resolve
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --offline --no-progress --include-fragments 'README.md' 'CONTRIBUTING.md' 'skills/**/*.md'
+          fail: true
+
+      - name: Write the pull request title and body
+        id: summary
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          echo "title=$(head -n 1 "$RUNNER_TEMP/summary.md")" >> "$GITHUB_OUTPUT"
+          tail -n +2 "$RUNNER_TEMP/summary.md" > "$RUNNER_TEMP/body.md"
+          echo "Opened by the [Sync workflow]($RUN_URL), where the checks passed." >> "$RUNNER_TEMP/body.md"
+          cat "$RUNNER_TEMP/summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the pull request
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          branch: automated/sync-skills
+          delete-branch: true
+          commit-message: ${{ steps.summary.outputs.title }}
+          title: ${{ steps.summary.outputs.title }}
+          body-path: ${{ runner.temp }}/body.md
+          labels: sync

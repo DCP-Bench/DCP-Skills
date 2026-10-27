@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "skills": {
+    "dcp-choco": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:ffffe40ba1948f3d75f4714d629eb425fda29339a35ad422791d31ec753ee8d4",
+      "path": "solvers/choco/skills/dcp-choco",
+      "source": "dcp-rosetta"
+    },
+    "dcp-chuffed": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:8046df8688df17a4e47a69d300dee71865fde9a0b8d4e1d6b939df7ca5428990",
+      "path": "solvers/chuffed/skills/dcp-chuffed",
+      "source": "dcp-rosetta"
+    },
+    "dcp-clingo": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:6ca0de94136e8ced6129e15c38a0f846df443d204bb3255055841d4bbdd28b6a",
+      "path": "solvers/clingo/skills/dcp-clingo",
+      "source": "dcp-rosetta"
+    },
+    "dcp-cpmpy": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:a3f39d6275ca5c5fed72ddb797c49f020ba6e078161d48aa8943fe712b12ace8",
+      "path": "solvers/cpmpy/skills/dcp-cpmpy",
+      "source": "dcp-rosetta"
+    },
+    "dcp-cvc5": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:bdb2216c9a081a87351744368602cbc7e49358829e52480d4f5465dddb00b1b6",
+      "path": "solvers/cvc5/skills/dcp-cvc5",
+      "source": "dcp-rosetta"
+    },
+    "dcp-docplex": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:a2abec599056b34a92fafe130ca67a5db78a012d2d55296fde0c4ef6ccb9643e",
+      "path": "solvers/docplex/skills/dcp-docplex",
+      "source": "dcp-rosetta"
+    },
+    "dcp-eclipse": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:24b6a8fda474ae86d295c553ca0ecbe3d5a5f5c58b5ce4b007c65ee8350023f6",
+      "path": "solvers/eclipse/skills/dcp-eclipse",
+      "source": "dcp-rosetta"
+    },
+    "dcp-essence-prime": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:7bad47313bfa43b21f62b74c81fce52d31107ed7ad3587c8837d1ed89d43d367",
+      "path": "solvers/essence_prime/skills/dcp-essence-prime",
+      "source": "dcp-rosetta"
+    },
+    "dcp-exact": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:ad4090f581d5ba63d2b6f12e1d3481faa5228a5d26426a4d5b4e1c3efcc5b98c",
+      "path": "solvers/exact/skills/dcp-exact",
+      "source": "dcp-rosetta"
+    },
+    "dcp-gecode": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:775849c11301424a2c90a55d71bef73e27654c7fda6ca7cf6dd48b74385a758d",
+      "path": "solvers/gecode/skills/dcp-gecode",
+      "source": "dcp-rosetta"
+    },
+    "dcp-gurobi": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:9f5f8885a6532db21bb8fc4ef16646120b332ccf63d3e49845b5343b3e701b7b",
+      "path": "solvers/gurobi/skills/dcp-gurobi",
+      "source": "dcp-rosetta"
+    },
+    "dcp-hermax": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:23a55d2472189bde1a86b66029c1484fa5e95b5dd8cdd4c8ad03323aa5ed322e",
+      "path": "solvers/hermax/skills/dcp-hermax",
+      "source": "dcp-rosetta"
+    },
+    "dcp-highs": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:8160b6f339afbe83e6403e24a4c06cdfc33e63efa1ce10fbfde019292d968e53",
+      "path": "solvers/highs/skills/dcp-highs",
+      "source": "dcp-rosetta"
+    },
+    "dcp-huub": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:f303efa37c65e15c93602a70da8fefbe7228269658969b858ff1d1220ef876c0",
+      "path": "solvers/huub/skills/dcp-huub",
+      "source": "dcp-rosetta"
+    },
+    "dcp-idp-z3": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:a3a011a235b7458c7d2a54693cb9e60f18ec9295dc700073d0c567368a8943d5",
+      "path": "solvers/idp_z3/skills/dcp-idp-z3",
+      "source": "dcp-rosetta"
+    },
+    "dcp-jump": {
+      "commit": "2df816fb3fd81ec6f63cd535bd8a9e0930af5233",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:fcdf824ccc58fd73ce67312784e641fc18070b79676deeac10155246f6d13db8",
+      "path": "solvers/jump/skills/dcp-jump",
+      "source": "dcp-rosetta"
+    },
+    "dcp-maxicp": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:cd733e4c18c09641f35565376f0d0cb09a41aee5c4d8edabcff17fef0bd3944b",
+      "path": "solvers/maxicp/skills/dcp-maxicp",
+      "source": "dcp-rosetta"
+    },
+    "dcp-minizinc": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:dd99a23498654f9ca2bc312055d84b62dbc21cf401d7ece1d59f70514e8084e6",
+      "path": "solvers/minizinc/skills/dcp-minizinc",
+      "source": "dcp-rosetta"
+    },
+    "dcp-ortools-cp-sat": {
+      "commit": "2df816fb3fd81ec6f63cd535bd8a9e0930af5233",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:fa9990bdeb3a58045690b4e6bd9ee95b04050723508fff968b66d004e901d405",
+      "path": "solvers/ortools_cp_sat/skills/dcp-ortools-cp-sat",
+      "source": "dcp-rosetta"
+    },
+    "dcp-paramita": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:68d7a9b407ccc146e7a1812571a679dc42e74df381c28b5c298a3dd73d3aea5a",
+      "path": "solvers/paramita/skills/dcp-paramita",
+      "source": "dcp-rosetta"
+    },
+    "dcp-picat": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:803433e9a2175a96539ee9f27d2ddb5968757275eca8941432cbc6bf08f55c49",
+      "path": "solvers/picat/skills/dcp-picat",
+      "source": "dcp-rosetta"
+    },
+    "dcp-pulp": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:5e548da1e96ae9164dfe8c372061ae995c939eb379963d51db0bddae66612e9d",
+      "path": "solvers/pulp/skills/dcp-pulp",
+      "source": "dcp-rosetta"
+    },
+    "dcp-pumpkin": {
+      "commit": "b41240bbcc285b7e6ce8fb548e99b179a1789fce",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:9f8079ed8451d3b7b933fd786d8250f9f27190a40372e7d18d5c88eb4d9c0890",
+      "path": "solvers/pumpkin/skills/dcp-pumpkin",
+      "source": "dcp-rosetta"
+    },
+    "dcp-pycsp3": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:e719b0b4bce269597562b46831ff48cfc177c42c929d5e9d90e165c5bb666f48",
+      "path": "solvers/pycsp3/skills/dcp-pycsp3",
+      "source": "dcp-rosetta"
+    },
+    "dcp-pysat": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:2a64e47fe2266187267e533e63b8955708ce7648f9c1a865edf0ea808c01f147",
+      "path": "solvers/pysat/skills/dcp-pysat",
+      "source": "dcp-rosetta"
+    },
+    "dcp-python-mip": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:4aeb1872da40c42e575d578a7e7f21c8c9f0b83de1cd74f16c01550b76299f78",
+      "path": "solvers/python_mip/skills/dcp-python-mip",
+      "source": "dcp-rosetta"
+    },
+    "dcp-scip": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:b1c2a6e3b1f8746c73c75302c1ab69996c43d783c650cea59aba206d866fdf23",
+      "path": "solvers/scip/skills/dcp-scip",
+      "source": "dcp-rosetta"
+    },
+    "dcp-swipl": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:7d7b8d23f77266c374ade805f0d76d0ed9e32e3a4051d88916434379f6cbc508",
+      "path": "solvers/swipl/skills/dcp-swipl",
+      "source": "dcp-rosetta"
+    },
+    "dcp-z3": {
+      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
+      "commit_date": "2026-10-27",
+      "digest": "sha256:9f36d418d4cd8a08db227cb3776047387c50ea9fbf4fe87dc63990d6bbfe7878",
+      "path": "solvers/z3/skills/dcp-z3",
+      "source": "dcp-rosetta"
+    }
+  },
+  "sources": {
+    "dcp-rosetta": {
+      "commit": "b41240bbcc285b7e6ce8fb548e99b179a1789fce",
+      "ref": "main",
+      "repo": "DCP-Bench/DCP-Rosetta"
+    }
+  }
+}

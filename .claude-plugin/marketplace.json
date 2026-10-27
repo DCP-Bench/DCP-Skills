@@ -1,0 +1,48 @@
+{
+  "name": "dcp-bench",
+  "owner": {
+    "name": "DCP-Bench"
+  },
+  "metadata": {
+    "description": "Agent skills for constraint and optimisation solvers, from DCP-Bench"
+  },
+  "plugins": [
+    {
+      "name": "dcp-solvers",
+      "description": "One skill per solver: install it, model with it from each of its language interfaces, solve, and read the results",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/dcp-choco",
+        "./skills/dcp-chuffed",
+        "./skills/dcp-clingo",
+        "./skills/dcp-cpmpy",
+        "./skills/dcp-cvc5",
+        "./skills/dcp-docplex",
+        "./skills/dcp-eclipse",
+        "./skills/dcp-essence-prime",
+        "./skills/dcp-exact",
+        "./skills/dcp-gecode",
+        "./skills/dcp-gurobi",
+        "./skills/dcp-hermax",
+        "./skills/dcp-highs",
+        "./skills/dcp-huub",
+        "./skills/dcp-idp-z3",
+        "./skills/dcp-jump",
+        "./skills/dcp-maxicp",
+        "./skills/dcp-minizinc",
+        "./skills/dcp-ortools-cp-sat",
+        "./skills/dcp-paramita",
+        "./skills/dcp-picat",
+        "./skills/dcp-pulp",
+        "./skills/dcp-pumpkin",
+        "./skills/dcp-pycsp3",
+        "./skills/dcp-pysat",
+        "./skills/dcp-python-mip",
+        "./skills/dcp-scip",
+        "./skills/dcp-swipl",
+        "./skills/dcp-z3"
+      ]
+    }
+  ]
+}
