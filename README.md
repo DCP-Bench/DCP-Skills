@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 29](https://img.shields.io/badge/solvers-29-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-10-27](https://img.shields.io/badge/updated-2026--10--27-blue)](skills.lock.json)
+[![solvers: 29](https://img.shields.io/badge/solvers-29-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-10-28](https://img.shields.io/badge/updated-2026--10--28-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -53,7 +53,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-choco`](skills/dcp-choco/) | java, python | Choco, an open-source constraint programming solver with integer, Boolean and set variables, a large catalogue of global constraints (all different, cumulative, table, circuit, regular and more), reification and optimisation, used from Java (choco-solver) or Python (pychoco, no Java install needed). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/choco/skills/dcp-choco) |
+| [`dcp-choco`](skills/dcp-choco/) | java, python | Choco, an open-source constraint programming solver with integer, Boolean and set variables, a large catalogue of global constraints (all different, cumulative, table, circuit, regular and more), reification and optimisation, used from Java (choco-solver) or Python (pychoco, no Java install needed). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/9afb34e48f5a1d3e646a6507ddbd16607aae440c/solvers/choco/skills/dcp-choco) |
 | [`dcp-chuffed`](skills/dcp-chuffed/) | cpp | Chuffed, a lazy clause generation constraint programming solver, used directly from C++ through its native API (Problem subclass, IntVar/BoolView, int_linear, all_different, cumulative, branch, optimize, engine.solve), built with CMake. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/chuffed/skills/dcp-chuffed) |
 | [`dcp-cpmpy`](skills/dcp-cpmpy/) | python | CPMpy is a Python constraint modelling library for constraint programming and optimisation, solved by OR-Tools CP-SAT by default (Python package cpmpy). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/cpmpy/skills/dcp-cpmpy) |
 | [`dcp-essence-prime`](skills/dcp-essence-prime/) | essence_prime | Essence' constraint modelling language run with Savile Row and its bundled Minion CP solver (given/find/letting, matrices, globals, minimising/maximising, .param files, solution files, -all-solutions, branching). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/essence_prime/skills/dcp-essence-prime) |
