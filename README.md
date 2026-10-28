@@ -9,7 +9,7 @@
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
 
 One skill per solver, covering how to **install** it, **model** with it in (potentially multiple language interfaces),
-**solve** a model, and read the **results**. The skills are generated as part of the [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta) project, and get evaluated on [DCP-Bench](https://github.com/DCP-Bench). 
+**solve** a model, and read the **results**. The skills are generated as part of the [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta) project, and get evaluated on [DCP-Bench-Open](https://github.com/DCP-Bench/DCP-Bench-Open). 
 
 See these skills in action in the [**DCP-Rosetta catalogue**](https://dcp-bench.github.io/DCP-Rosetta/paradigms.html).
 
