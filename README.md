@@ -1,4 +1,4 @@
-# DCP skills
+# DCP Skills
 
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
