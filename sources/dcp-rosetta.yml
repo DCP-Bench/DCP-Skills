@@ -14,6 +14,6 @@ exclude: []
 #  - path: solvers/<solver>/skills/<name>
 #    reason: why it stays out of the public catalog
 
-# Optional: a JSON list of {id, name} naming the values of metadata.paradigm,
+# Optional: a JSON list of {id, name, abbrev?} naming the values of metadata.paradigm,
 # used as the section headings of the README catalog.
 paradigms: solvers/paradigms.json

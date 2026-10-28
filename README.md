@@ -47,7 +47,7 @@ repository with the next sync. Issues here are for the mirror itself. See
 ## Catalog
 
 <!-- catalog:start -->
-### Constraint programming
+### Constraint programming (CP)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
@@ -64,21 +64,21 @@ repository with the next sync. Issues here are for the mirror itself. See
 | [`dcp-pumpkin`](skills/dcp-pumpkin/) | rust | Pumpkin, a constraint solver written in Rust (crate pumpkin-solver 0.5.0) with lazy clause generation, integer and Boolean variables, linear and global constraints, and proven optimisation. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/b41240bbcc285b7e6ce8fb548e99b179a1789fce/solvers/pumpkin/skills/dcp-pumpkin) |
 | [`dcp-pycsp3`](skills/dcp-pycsp3/) | python | PyCSP3 is a Python library (pip package and import pycsp3) that compiles constraint models to XCSP3; the ACE solver ships inside the wheel as a Java jar and solves them. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/pycsp3/skills/dcp-pycsp3) |
 
-### Constraint logic programming
+### Constraint logic programming (CLP)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
 | [`dcp-eclipse`](skills/dcp-eclipse/) | prolog | ECLiPSe, the ECLiPSe Constraint Logic Programming system (version 7.x), used through its native Prolog interface (eclipse launcher, .ecl files), for finite-domain constraint satisfaction and optimisation in Prolog syntax with libraries ic, ic_global, gfd (Gecode), branch_and_bound and timeout. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/eclipse/skills/dcp-eclipse) |
 | [`dcp-swipl`](skills/dcp-swipl/) | prolog | SWI-Prolog CLP(FD), the finite-domain constraint solver in library(clpfd) of SWI-Prolog 9.x, for constraint satisfaction and optimisation in Prolog. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/swipl/skills/dcp-swipl) |
 
-### Boolean satisfiability
+### Boolean satisfiability (SAT)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
 | [`dcp-paramita`](skills/dcp-paramita/) | python | Paramita SAT and MaxSAT framework, used from Python (paramita 1.2.0) - Bool variables, propositional operators and pseudo-Boolean constraints from paramita.modelling, integers encoded as Booleans, satisfiability and all-solutions enumeration with CaDiCaL, and optimisation as MaxSAT with EvalMaxSAT2022. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/paramita/skills/dcp-paramita) |
 | [`dcp-pysat`](skills/dcp-pysat/) | python | PySAT (python-sat), a Python library for SAT and MaxSAT modelling with CNF and WCNF formulas, cardinality and pseudo-Boolean encoders, finite-domain integers (pysat.integer), SAT solvers such as Glucose, and the RC2 MaxSAT solver. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/pysat/skills/dcp-pysat) |
 
-### Satisfiability modulo theories
+### Satisfiability modulo theories (SMT)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
@@ -86,7 +86,7 @@ repository with the next sync. Issues here are for the mirror itself. See
 | [`dcp-idp-z3`](skills/dcp-idp-z3/) | idp | IDP-Z3, a reasoning engine for FO(.) ("FO-dot") knowledge bases (vocabulary, theory, structure) built on Z3; pip package idp-engine, Python module idp_engine, command idp-engine. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/idp_z3/skills/dcp-idp-z3) |
 | [`dcp-z3`](skills/dcp-z3/) | python | Z3, an SMT solver with a Python API (pip package z3-solver, import z3) for integer, Boolean and array constraints, satisfiability checks, optimisation and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/z3/skills/dcp-z3) |
 
-### Mixed integer programming
+### Mixed integer programming (MIP)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
@@ -98,19 +98,19 @@ repository with the next sync. Issues here are for the mirror itself. See
 | [`dcp-python-mip`](skills/dcp-python-mip/) | python | Python-MIP (import mip), a Python library for linear and mixed-integer programs, solved by its default solver CBC. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/python_mip/skills/dcp-python-mip) |
 | [`dcp-scip`](skills/dcp-scip/) | python | SCIP, a branch-and-cut mixed-integer and nonlinear solver with native general constraints (and/or/xor, indicator, cardinality, SOS, cumulative, nonlinear), used from Python (PySCIPOpt, pip package and import `pyscipopt`). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/scip/skills/dcp-scip) |
 
-### Answer set programming
+### Answer set programming (ASP)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
 | [`dcp-clingo`](skills/dcp-clingo/) | asp | clingo, an answer set programming (ASP) system. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/clingo/skills/dcp-clingo) |
 
-### Maximum satisfiability
+### Maximum satisfiability (MaxSAT)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
 | [`dcp-hermax`](skills/dcp-hermax/) | python | hermax is a MaxSAT modelling library (hermax.model.Model over PySAT) with Boolean and integer variables, hard constraints, weighted soft clauses for minimise and maximise, and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/hermax/skills/dcp-hermax) |
 
-### Pseudo-Boolean
+### Pseudo-Boolean (PB)
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |

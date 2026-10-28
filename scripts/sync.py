@@ -127,6 +127,11 @@ def first_sentence(text):
     return re.split(r"(?<=\.)\s+(?=[A-Z])", " ".join(text.split()))[0]
 
 
+def paradigm_label(entry):
+    """A catalog heading: the paradigm's name, with its abbreviation when it has one."""
+    return f"{entry['name']} ({entry['abbrev']})" if entry.get("abbrev") else entry["name"]
+
+
 def catalog(lock, labels):
     """The README catalog: one table per paradigm, in the order the sources name them."""
     groups = {}
@@ -186,7 +191,7 @@ def sync(local, allow_removals):
                     raise SyncError(f"{name} is published by more than one source")
             plans.append((source_id, config, repo, found))
             if config.get("paradigms"):
-                labels.update({entry["id"]: entry["name"] for entry in json.loads((repo / config["paradigms"]).read_text())})
+                labels.update({entry["id"]: paradigm_label(entry) for entry in json.loads((repo / config["paradigms"]).read_text())})
         published = {name for *_, found in plans for name in found}
         removed = sorted(name for name in old["skills"] if name not in published)
         if len(removed) > MAX_REMOVALS and not allow_removals:
