@@ -22,8 +22,11 @@ With the [skills CLI](https://skills.sh), for Claude Code, Codex, Cursor and oth
 
 ```console
 npx skills add DCP-Bench/skills                    # pick from the list
+```
+```console
 npx skills add DCP-Bench/skills --skill dcp-cpmpy  # one skill
 ```
+
 
 In Claude Code, as a plugin holding all the skills:
 
