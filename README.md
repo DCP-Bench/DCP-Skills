@@ -11,6 +11,8 @@ A collection of general purpose [agent skills](https://agentskills.io) for const
 One skill per solver, covering how to **install** it, **model** with it in (potentially multiple language interfaces),
 **solve** a model, and read the **results**. The skills are generated as part of the [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta) project, and get evaluated on [DCP-Bench](https://github.com/DCP-Bench). 
 
+See these skills in action in the [**DCP-Rosetta catalogue**](https://dcp-bench.github.io/DCP-Rosetta/paradigms.html).
+
 This repository is a read-only mirror.
 
 
