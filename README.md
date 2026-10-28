@@ -1,4 +1,6 @@
-# DCP-Bench skills
+# DCP skills
+
+[![skills.sh](https://skills.sh/b/DCP-Bench/skills)](https://skills.sh/DCP-Bench/skills)
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
 
