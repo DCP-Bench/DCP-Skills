@@ -242,7 +242,7 @@ def sync(local, allow_removals):
 
 
 def summary(old, lock, changes):
-    """A Markdown account of a sync for its pull request: each change links to the
+    """A Markdown account of a sync for its commit message: each change links to the
     upstream diff (or history) of that skill."""
     def link(entry, before=None):
         repo = lock["sources"].get(entry["source"], old["sources"].get(entry["source"], {})).get("repo")
@@ -270,7 +270,7 @@ def main():
     parser.add_argument("--allow-removals", action="store_true",
                         help=f"remove more than {MAX_REMOVALS} skills in one run")
     parser.add_argument("--summary", type=Path, metavar="FILE",
-                        help="write a Markdown summary of the changes, and a title as its first line")
+                        help="write a commit message: a title line, then a Markdown summary of the changes")
     args = parser.parse_args()
     local = dict(item.split("=", 1) for item in args.local)
     try:
@@ -286,7 +286,7 @@ def main():
     print(f"{len(lock['skills'])} skills from {len(lock['sources'])} source(s)")
     if args.summary:
         counts = ", ".join(f"{len(names)} {kind}" for kind, names in changes.items() if names) or "no changes"
-        args.summary.write_text(f"Sync skills: {counts}\n{summary(old, lock, changes)}")
+        args.summary.write_text(f"Sync skills: {counts}\n\n{summary(old, lock, changes)}")
 
 
 if __name__ == "__main__":

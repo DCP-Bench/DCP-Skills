@@ -1,23 +1,26 @@
-# Mirrors the skills from the sources in sources/ and opens (or updates) one pull
-# request with the changes, on the branch automated/sync-skills. A person
-# reviews and merges it. With nothing new upstream the sync changes nothing,
-# and no pull request is opened.
+# Mirrors the skills from the sources in sources/ and pushes the result straight
+# to main, without a pull request. DCP-Rosetta starts it on every push to its
+# main (.github/workflows/mirror-skills.yml there, which sends a
+# repository_dispatch); the daily run catches a dispatch that went missing.
+# With nothing new upstream the sync changes nothing, and nothing is pushed.
 #
-# A pull request opened with GITHUB_TOKEN does not trigger checks.yml, so this
-# job runs the same checks before opening it. The repository setting "Allow
-# GitHub Actions to create and approve pull requests" must be on.
+# A push made with GITHUB_TOKEN does not trigger checks.yml, so this job runs
+# the same checks first: a sync that fails them pushes nothing, and the failed
+# run shows which skill to fix upstream.
 
 name: Sync
 
 on:
+  repository_dispatch:
+    types: [rosetta-push]
   schedule:
     - cron: "17 5 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
-  pull-requests: write
 
+# A newer run syncs the latest upstream anyway, so it replaces an older one.
 concurrency:
   group: sync
   cancel-in-progress: true
@@ -41,7 +44,7 @@ jobs:
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           args: --offline --no-progress --include-fragments 'README.md' 'CONTRIBUTING.md' 'skills/**/*.md'
-          # Outside the checkout, or create-pull-request would commit the report.
+          # Outside the checkout, or the commit below would include the report.
           output: ${{ runner.temp }}/lychee.md
           jobSummary: false
           fail: true
@@ -49,22 +52,15 @@ jobs:
         if: ${{ !cancelled() && steps.links.outcome != 'skipped' }}
         run: scripts/link-report.sh internal "$RUNNER_TEMP/lychee.md" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Write the pull request title and body
-        id: summary
-        env:
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      - name: Push the changes to main
         run: |
-          echo "title=$(head -n 1 "$RUNNER_TEMP/summary.md")" >> "$GITHUB_OUTPUT"
-          tail -n +2 "$RUNNER_TEMP/summary.md" > "$RUNNER_TEMP/body.md"
-          echo "Opened by the [Sync workflow]($RUN_URL), where the checks passed." >> "$RUNNER_TEMP/body.md"
           cat "$RUNNER_TEMP/summary.md" >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Open or update the pull request
-        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
-        with:
-          branch: automated/sync-skills
-          delete-branch: true
-          commit-message: ${{ steps.summary.outputs.title }}
-          title: ${{ steps.summary.outputs.title }}
-          body-path: ${{ runner.temp }}/body.md
-          labels: sync
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing new upstream."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -F "$RUNNER_TEMP/summary.md"
+          git push origin HEAD:main

@@ -32,13 +32,16 @@ make links                               # internal links and anchors (needs Doc
 A skill synced from uncommitted upstream changes is marked `"dirty": true` in the lock, and
 `make check` fails on it.
 
-## Sync pull requests
+## Automatic sync
 
-`sync.yml` runs daily, and on demand from the Actions tab. When upstream changed, it opens one
-pull request on `automated/sync-skills`, or updates the open one. The PR links each changed
-skill to its upstream diff. The same checks as `checks.yml` run before the PR is opened.
-Review the PR and merge it. A sync that fails its checks opens no PR; the failed run shows
-which skill to fix upstream.
+Every push to DCP-Rosetta's main starts `sync.yml` here: Rosetta's `mirror-skills.yml` sends
+a `repository_dispatch`, using its `SKILLS_MIRROR_TOKEN` secret. `sync.yml` also runs daily, in
+case a dispatch went missing, and on demand from the Actions tab.
+
+When upstream changed, the sync runs the same checks as `checks.yml` and pushes the result
+straight to main, with no pull request. Its commit, by `github-actions[bot]`, links each
+changed skill to its upstream diff. A sync that fails its checks pushes nothing; the failed
+run shows which skill to fix upstream, and the next push there retries.
 
 ## Checks
 
