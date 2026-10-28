@@ -8,7 +8,7 @@
 For every sources/<id>.yml this clones the repository (or uses a local checkout,
 --local <id>=<path>), copies each matched skill folder verbatim to skills/<name>/,
 removes the skills of that source that disappeared upstream, and rewrites
-skills.lock.json (where each skill came from), the catalog table in README.md and
+skills.lock.json (where each skill came from), the badges and catalog table in README.md and
 the plugin marketplace in .claude-plugin/.
 
 Nothing in skills/ is edited by hand: a fix belongs in the upstream repository.
@@ -27,6 +27,7 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+from urllib.parse import quote
 
 import yaml
 
@@ -36,7 +37,6 @@ SKILLS = ROOT / "skills"
 LOCK = ROOT / "skills.lock.json"
 README = ROOT / "README.md"
 MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
-CATALOG_START, CATALOG_END = "<!-- catalog:start -->", "<!-- catalog:end -->"
 # More removals than this in one run is more likely a broken source than a real
 # change upstream; it needs --allow-removals.
 MAX_REMOVALS = 5
@@ -152,10 +152,32 @@ def catalog(lock, labels):
     return "\n\n".join(parts)
 
 
-def write_readme(text):
+def badge(label, message, link):
+    """A static shields.io badge; the badge URL doubles - and _ to keep them literal."""
+    escape = lambda text: quote(text.replace("-", "--").replace("_", "__"))
+    return f"[![{label}: {message}](https://img.shields.io/badge/{escape(label)}-{escape(message)}-blue)]({link})"
+
+
+def badges(lock):
+    """The README badges: what the catalog covers, and when a skill in it last changed upstream."""
+    metas = [frontmatter(SKILLS / name).get("metadata") or {} for name in lock["skills"]]
+    paradigms = {meta["paradigm"] for meta in metas if meta.get("paradigm")}
+    languages = {language.strip() for meta in metas for language in meta.get("interfaces", "").split(",") if language.strip()}
+    updated = max((entry["commit_date"] for entry in lock["skills"].values() if entry["commit_date"]), default="never")
+    return " ".join([badge("solvers", str(len(lock["skills"])), "#catalog"),
+                     badge("paradigms", str(len(paradigms)), "#catalog"),
+                     badge("languages", str(len(languages)), "#catalog"),
+                     badge("updated", updated, "skills.lock.json")])
+
+
+def write_readme(sections):
+    """Replaces the text between each <!-- name:start --> and <!-- name:end --> marker pair."""
     readme = README.read_text(encoding="utf-8")
-    start, end = readme.index(CATALOG_START) + len(CATALOG_START), readme.index(CATALOG_END)
-    README.write_text(f"{readme[:start]}\n{text}\n{readme[end:]}", encoding="utf-8")
+    for name, text in sections.items():
+        start_marker, end_marker = f"<!-- {name}:start -->", f"<!-- {name}:end -->"
+        start, end = readme.index(start_marker) + len(start_marker), readme.index(end_marker)
+        readme = f"{readme[:start]}\n{text}\n{readme[end:]}"
+    README.write_text(readme, encoding="utf-8")
 
 
 def marketplace(lock):
@@ -213,7 +235,7 @@ def sync(local, allow_removals):
             changes["removed"].append(name)
 
     LOCK.write_text(json.dumps(lock, indent=2, sort_keys=True) + "\n")
-    write_readme(catalog(lock, labels))
+    write_readme({"badges": badges(lock), "catalog": catalog(lock, labels)})
     MARKETPLACE.parent.mkdir(exist_ok=True)
     MARKETPLACE.write_text(json.dumps(marketplace(lock), indent=2) + "\n")
     return old, lock, changes

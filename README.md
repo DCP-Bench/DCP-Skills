@@ -1,6 +1,10 @@
 # DCP skills
 
 [![skills.sh](https://skills.sh/b/DCP-Bench/skills)](https://skills.sh/DCP-Bench/skills)
+[![Checks](https://github.com/DCP-Bench/skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/skills/actions/workflows/checks.yml)
+<!-- badges:start -->
+[![solvers: 29](https://img.shields.io/badge/solvers-29-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-10-27](https://img.shields.io/badge/updated-2026--10--27-blue)](skills.lock.json)
+<!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
 

@@ -16,7 +16,7 @@ what it is.
   reason.
 - `scripts/sync.py` clones each source and copies every matched folder verbatim to
   `skills/<folder name>/`. It removes skills that disappeared upstream, refusing to remove more
-  than 5 at once. It then rewrites `skills.lock.json` and the catalog in `README.md`.
+  than 5 at once. It then rewrites `skills.lock.json` and the badges and catalog in `README.md`.
 - Because the lock holds no timestamps, rerunning the sync with nothing new upstream changes
   nothing.
 
