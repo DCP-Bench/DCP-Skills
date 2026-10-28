@@ -1,7 +1,7 @@
 # DCP skills
 
-[![skills.sh](https://skills.sh/b/DCP-Bench/DCP-skills)](https://skills.sh/DCP-Bench/DCP-skills)
-[![Checks](https://github.com/DCP-Bench/DCP-skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-skills/actions/workflows/checks.yml)
+[![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
+[![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
 [![solvers: 29](https://img.shields.io/badge/solvers-29-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-10-28](https://img.shields.io/badge/updated-2026--10--28-blue)](skills.lock.json)
 <!-- badges:end -->
@@ -21,17 +21,17 @@ This repository is a read-only mirror.
 With the [skills CLI](https://skills.sh), for Claude Code, Codex, Cursor and other agents:
 
 ```console
-npx skills add DCP-Bench/DCP-skills                    # pick from the list
+npx skills add DCP-Bench/DCP-Skills                    # pick from the list
 ```
 ```console
-npx skills add DCP-Bench/DCP-skills --skill dcp-cpmpy  # one skill
+npx skills add DCP-Bench/DCP-Skills --skill dcp-cpmpy  # one skill
 ```
 
 
 In Claude Code, as a plugin holding all the skills:
 
 ```console
-/plugin marketplace add DCP-Bench/DCP-skills
+/plugin marketplace add DCP-Bench/DCP-Skills
 /plugin install dcp-solvers@dcp-bench
 ```
 
