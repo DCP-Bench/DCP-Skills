@@ -106,6 +106,13 @@
       "path": "solvers/idp_z3/skills/dcp-idp-z3",
       "source": "dcp-rosetta"
     },
+    "dcp-jacop": {
+      "commit": "33e03896880423604161c730c845fa7c0d34da13",
+      "commit_date": "2026-10-31",
+      "digest": "sha256:c789aa3ac41668db5d46c2bc35f9bf27097b94541656a7778a3ab78bbd045afe",
+      "path": "solvers/jacop/skills/dcp-jacop",
+      "source": "dcp-rosetta"
+    },
     "dcp-jump": {
       "commit": "2df816fb3fd81ec6f63cd535bd8a9e0930af5233",
       "commit_date": "2026-10-27",
@@ -214,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "392127fbe7859966263b1b2671b3221cb5a799c6",
+      "commit": "59160e238ecf5c182f50044973aa6742219e99a4",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }

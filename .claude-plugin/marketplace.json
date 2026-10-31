@@ -28,6 +28,7 @@
         "./skills/dcp-highs",
         "./skills/dcp-huub",
         "./skills/dcp-idp-z3",
+        "./skills/dcp-jacop",
         "./skills/dcp-jump",
         "./skills/dcp-maxicp",
         "./skills/dcp-minizinc",
