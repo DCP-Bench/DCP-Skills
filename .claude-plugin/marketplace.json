@@ -34,6 +34,7 @@
         "./skills/dcp-ortools-cp-sat",
         "./skills/dcp-paramita",
         "./skills/dcp-picat",
+        "./skills/dcp-pindakaas",
         "./skills/dcp-pulp",
         "./skills/dcp-pumpkin",
         "./skills/dcp-pycsp3",

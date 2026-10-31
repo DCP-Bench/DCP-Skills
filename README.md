@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 29](https://img.shields.io/badge/solvers-29-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-10-28](https://img.shields.io/badge/updated-2026--10--28-blue)](skills.lock.json)
+[![solvers: 30](https://img.shields.io/badge/solvers-30-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-10-31](https://img.shields.io/badge/updated-2026--10--31-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -78,6 +78,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
 | [`dcp-paramita`](skills/dcp-paramita/) | python | Paramita SAT and MaxSAT framework, used from Python (paramita 1.2.0) - Bool variables, propositional operators and pseudo-Boolean constraints from paramita.modelling, integers encoded as Booleans, satisfiability and all-solutions enumeration with CaDiCaL, and optimisation as MaxSAT with EvalMaxSAT2022. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/paramita/skills/dcp-paramita) |
+| [`dcp-pindakaas`](skills/dcp-pindakaas/) | rust | Pindakaas, a library that encodes Boolean and integer constraints (clauses, propositional formulas, linear, pseudo-Boolean and cardinality constraints, integer variables) into CNF and solves them with the bundled CaDiCaL SAT solver, used from Rust (crate pindakaas 0.6.0). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/392127fbe7859966263b1b2671b3221cb5a799c6/solvers/pindakaas/skills/dcp-pindakaas) |
 | [`dcp-pysat`](skills/dcp-pysat/) | python | PySAT (python-sat), a Python library for SAT and MaxSAT modelling with CNF and WCNF formulas, cardinality and pseudo-Boolean encoders, finite-domain integers (pysat.integer), SAT solvers such as Glucose, and the RC2 MaxSAT solver. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/pysat/skills/dcp-pysat) |
 
 ### Satisfiability modulo theories (SMT)

@@ -148,6 +148,13 @@
       "path": "solvers/picat/skills/dcp-picat",
       "source": "dcp-rosetta"
     },
+    "dcp-pindakaas": {
+      "commit": "392127fbe7859966263b1b2671b3221cb5a799c6",
+      "commit_date": "2026-10-31",
+      "digest": "sha256:4755d18f5fd27b42752d575c3fc408552b32d3f55c8460d17be12852e0b9cd3d",
+      "path": "solvers/pindakaas/skills/dcp-pindakaas",
+      "source": "dcp-rosetta"
+    },
     "dcp-pulp": {
       "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
       "commit_date": "2026-10-27",
@@ -207,7 +214,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "9afb34e48f5a1d3e646a6507ddbd16607aae440c",
+      "commit": "392127fbe7859966263b1b2671b3221cb5a799c6",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
