@@ -23,9 +23,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-cpmpy": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:a3f39d6275ca5c5fed72ddb797c49f020ba6e078161d48aa8943fe712b12ace8",
+      "commit": "9b291142228cd6a05bc210978337582fc0fd7635",
+      "commit_date": "2026-11-01",
+      "digest": "sha256:6d2ad376045aba64c90eecb343d85a1b2b58bbbbf85505813245ce7f9b604b26",
       "path": "solvers/cpmpy/skills/dcp-cpmpy",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "59160e238ecf5c182f50044973aa6742219e99a4",
+      "commit": "9b291142228cd6a05bc210978337582fc0fd7635",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
