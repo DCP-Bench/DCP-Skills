@@ -135,9 +135,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-ortools-cp-sat": {
-      "commit": "2df816fb3fd81ec6f63cd535bd8a9e0930af5233",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:fa9990bdeb3a58045690b4e6bd9ee95b04050723508fff968b66d004e901d405",
+      "commit": "bb380bb388e3e772ccb50b8535b76f29bbb6e6bf",
+      "commit_date": "2026-11-01",
+      "digest": "sha256:18ca81a91e58213b2faf7f2aa1ef8751a6834cc3122e4a35a9f877200cd5485b",
       "path": "solvers/ortools_cp_sat/skills/dcp-ortools-cp-sat",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "9b291142228cd6a05bc210978337582fc0fd7635",
+      "commit": "bb380bb388e3e772ccb50b8535b76f29bbb6e6bf",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
