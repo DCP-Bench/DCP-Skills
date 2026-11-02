@@ -184,9 +184,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-pysat": {
-      "commit": "1ebcf313fe8990609c6a52119003a419e6f2fc6e",
+      "commit": "62aa7d4a1977b8351696d36b62fcfc7b1a364622",
       "commit_date": "2026-11-02",
-      "digest": "sha256:aa69c00607475018ac4bb753aa160e1bcad25d8b857dce051353c2af64b395be",
+      "digest": "sha256:5599008eb60c060b0cc593e42fd8a1cee3c584c96de3d26ca543bb629cffd884",
       "path": "solvers/pysat/skills/dcp-pysat",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "7d52a4f4e770ecf54dd37270cf65805de270b1e0",
+      "commit": "62aa7d4a1977b8351696d36b62fcfc7b1a364622",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
