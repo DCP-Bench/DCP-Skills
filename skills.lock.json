@@ -2,9 +2,9 @@
   "schema": 1,
   "skills": {
     "dcp-choco": {
-      "commit": "9afb34e48f5a1d3e646a6507ddbd16607aae440c",
-      "commit_date": "2026-10-28",
-      "digest": "sha256:2fb4f7e0f793c831cb91449753dee505390e85c21fb414adfacbb4d936d4ebd2",
+      "commit": "b3e30b7e163e04d3843571ef3919d46eaa1dd147",
+      "commit_date": "2026-11-01",
+      "digest": "sha256:e8529f234126c1f8f8654b4f8d88dc3f39a530e9de6f7228dbc2924f5775ef83",
       "path": "solvers/choco/skills/dcp-choco",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "bb380bb388e3e772ccb50b8535b76f29bbb6e6bf",
+      "commit": "b3e30b7e163e04d3843571ef3919d46eaa1dd147",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
