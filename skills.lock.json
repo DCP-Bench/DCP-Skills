@@ -30,9 +30,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-cvc5": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:bdb2216c9a081a87351744368602cbc7e49358829e52480d4f5465dddb00b1b6",
+      "commit": "7d52a4f4e770ecf54dd37270cf65805de270b1e0",
+      "commit_date": "2026-11-02",
+      "digest": "sha256:a86d1ec72f76e8c9a04fd38add8524576cf1f056a67a952708bb82b3317e6109",
       "path": "solvers/cvc5/skills/dcp-cvc5",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "490d1ce212bea195c018848a68b752e2e29c20a8",
+      "commit": "7d52a4f4e770ecf54dd37270cf65805de270b1e0",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
