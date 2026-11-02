@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 31](https://img.shields.io/badge/solvers-31-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-01](https://img.shields.io/badge/updated-2026--11--01-blue)](skills.lock.json)
+[![solvers: 31](https://img.shields.io/badge/solvers-31-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-02](https://img.shields.io/badge/updated-2026--11--02-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -88,7 +88,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 | --- | --- | --- | --- |
 | [`dcp-cvc5`](skills/dcp-cvc5/) | python | cvc5, an SMT solver used for finite-domain combinatorial models, from Python (pip package cvc5, module cvc5.pythonic, Z3-style). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/cvc5/skills/dcp-cvc5) |
 | [`dcp-idp-z3`](skills/dcp-idp-z3/) | idp | IDP-Z3, a reasoning engine for FO(.) ("FO-dot") knowledge bases (vocabulary, theory, structure) built on Z3; pip package idp-engine, Python module idp_engine, command idp-engine. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/idp_z3/skills/dcp-idp-z3) |
-| [`dcp-z3`](skills/dcp-z3/) | python | Z3, an SMT solver with a Python API (pip package z3-solver, import z3) for integer, Boolean and array constraints, satisfiability checks, optimisation and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/z3/skills/dcp-z3) |
+| [`dcp-z3`](skills/dcp-z3/) | python | Z3, an SMT solver with a Python API (pip package z3-solver, import z3) for integer, Boolean and array constraints, satisfiability checks, optimisation and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/bb900f575caeaa1d85f9c4400cffb988a303d6b9/solvers/z3/skills/dcp-z3) |
 
 ### Mixed integer programming (MIP)
 

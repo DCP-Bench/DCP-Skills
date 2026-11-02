@@ -212,16 +212,16 @@
       "source": "dcp-rosetta"
     },
     "dcp-z3": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:9f36d418d4cd8a08db227cb3776047387c50ea9fbf4fe87dc63990d6bbfe7878",
+      "commit": "bb900f575caeaa1d85f9c4400cffb988a303d6b9",
+      "commit_date": "2026-11-02",
+      "digest": "sha256:90693192866380af4c4ab68860a81e476ea32c376d854f1b4b4bb78ee57c5411",
       "path": "solvers/z3/skills/dcp-z3",
       "source": "dcp-rosetta"
     }
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "b3e30b7e163e04d3843571ef3919d46eaa1dd147",
+      "commit": "bb900f575caeaa1d85f9c4400cffb988a303d6b9",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
