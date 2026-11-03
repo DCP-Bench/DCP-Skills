@@ -163,9 +163,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-pulp": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:5e548da1e96ae9164dfe8c372061ae995c939eb379963d51db0bddae66612e9d",
+      "commit": "4352b497ba97a26106919dfea43ef75f36c3a17e",
+      "commit_date": "2026-11-03",
+      "digest": "sha256:c5b9a1257403a9569a4637e9b45f53be564af6c1fee2d3c6e3195ffd4e964309",
       "path": "solvers/pulp/skills/dcp-pulp",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "8197a45edf1ce2ec2e06ac4f6f83a66243c05c89",
+      "commit": "4352b497ba97a26106919dfea43ef75f36c3a17e",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
