@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 31](https://img.shields.io/badge/solvers-31-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-02](https://img.shields.io/badge/updated-2026--11--02-blue)](skills.lock.json)
+[![solvers: 31](https://img.shields.io/badge/solvers-31-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-03](https://img.shields.io/badge/updated-2026--11--03-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -112,7 +112,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-hermax`](skills/dcp-hermax/) | python | hermax is a MaxSAT modelling library (hermax.model.Model over PySAT) with Boolean and integer variables, hard constraints, weighted soft clauses for minimise and maximise, and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/hermax/skills/dcp-hermax) |
+| [`dcp-hermax`](skills/dcp-hermax/) | python | hermax is a MaxSAT modelling library (hermax.model.Model over PySAT) with Boolean and integer variables, native linear, pseudo-Boolean, table and scheduling constraints, a minimised objective compiled to weighted soft clauses, and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/becd08f2dccb67ac658cbd2bbdb90d2f36abbd50/solvers/hermax/skills/dcp-hermax) |
 
 ### Pseudo-Boolean (PB)
 
