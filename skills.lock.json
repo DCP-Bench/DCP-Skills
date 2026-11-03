@@ -191,9 +191,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-python-mip": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:4aeb1872da40c42e575d578a7e7f21c8c9f0b83de1cd74f16c01550b76299f78",
+      "commit": "4ec85f77cb7d85c0d0c8a42bdefaecc9f493379e",
+      "commit_date": "2026-11-03",
+      "digest": "sha256:77c7874ea5129e7d91c862cdad727198f30a241e9697c0cf950478d71e0748e7",
       "path": "solvers/python_mip/skills/dcp-python-mip",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "4352b497ba97a26106919dfea43ef75f36c3a17e",
+      "commit": "4ec85f77cb7d85c0d0c8a42bdefaecc9f493379e",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
