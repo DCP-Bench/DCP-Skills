@@ -142,9 +142,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-paramita": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:68d7a9b407ccc146e7a1812571a679dc42e74df381c28b5c298a3dd73d3aea5a",
+      "commit": "f66eea6f48506644c832a098ee334c3fe38b10ee",
+      "commit_date": "2026-11-03",
+      "digest": "sha256:a23ac3ef890577656714d00b90bdf206fb006139bbe0649703ff07e344bb32c0",
       "path": "solvers/paramita/skills/dcp-paramita",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "5611ab89b278990e2a240d46450b1b0131422ac8",
+      "commit": "f66eea6f48506644c832a098ee334c3fe38b10ee",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
