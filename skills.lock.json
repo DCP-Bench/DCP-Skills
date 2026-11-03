@@ -58,9 +58,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-exact": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:ad4090f581d5ba63d2b6f12e1d3481faa5228a5d26426a4d5b4e1c3efcc5b98c",
+      "commit": "5611ab89b278990e2a240d46450b1b0131422ac8",
+      "commit_date": "2026-11-03",
+      "digest": "sha256:8d20dc367d591d74ecdfd0c0b872a74496b0a936f718d12d7f7c4871067526b0",
       "path": "solvers/exact/skills/dcp-exact",
       "source": "dcp-rosetta"
     },
@@ -221,7 +221,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "4ec85f77cb7d85c0d0c8a42bdefaecc9f493379e",
+      "commit": "5611ab89b278990e2a240d46450b1b0131422ac8",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }

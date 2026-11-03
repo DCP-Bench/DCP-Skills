@@ -118,7 +118,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-exact`](skills/dcp-exact/) | python | Exact, a pseudo-Boolean and integer linear solver with Python bindings (package exact, import exact, class Exact) that builds models from named integer and 0/1 variables, linear constraints, reification and multiplication. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/exact/skills/dcp-exact) |
+| [`dcp-exact`](skills/dcp-exact/) | python | Exact, a pseudo-Boolean and integer linear solver with Python bindings (package exact, import exact, class Exact) that builds models from named integer and 0/1 variables, linear constraints, reification and multiplication. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/5611ab89b278990e2a240d46450b1b0131422ac8/solvers/exact/skills/dcp-exact) |
 <!-- catalog:end -->
 
 ## License
