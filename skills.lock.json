@@ -79,9 +79,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-hermax": {
-      "commit": "becd08f2dccb67ac658cbd2bbdb90d2f36abbd50",
-      "commit_date": "2026-11-03",
-      "digest": "sha256:efd02ff2b5b647c07fce4a328f249fc0534898704b5ac886175072a92f7dd96b",
+      "commit": "809ab6ddf1f34d17c2f21f5849b7f281d72d419a",
+      "commit_date": "2026-11-05",
+      "digest": "sha256:355db201e2d1f150265d3ed73286992a80cd09fb0b52c55c58eca26352bbf439",
       "path": "solvers/hermax/skills/dcp-hermax",
       "source": "dcp-rosetta"
     },
@@ -149,9 +149,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-paramita": {
-      "commit": "f66eea6f48506644c832a098ee334c3fe38b10ee",
-      "commit_date": "2026-11-03",
-      "digest": "sha256:a23ac3ef890577656714d00b90bdf206fb006139bbe0649703ff07e344bb32c0",
+      "commit": "ff6f75a38b724432e901924d6f1adf65a3c53f74",
+      "commit_date": "2026-11-05",
+      "digest": "sha256:57fd56677d4a1e219d41e4e3556af3bc2a64e2292c3c02747b628d70fa044a5c",
       "path": "solvers/paramita/skills/dcp-paramita",
       "source": "dcp-rosetta"
     },
@@ -191,9 +191,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-pysat": {
-      "commit": "62aa7d4a1977b8351696d36b62fcfc7b1a364622",
-      "commit_date": "2026-11-02",
-      "digest": "sha256:5599008eb60c060b0cc593e42fd8a1cee3c584c96de3d26ca543bb629cffd884",
+      "commit": "98cbdce949d7a92b4a558e55357bd9d7822f3da8",
+      "commit_date": "2026-11-05",
+      "digest": "sha256:a7a4fd694ed3e26454570183c3f5af4259e6cef6893d35a85574a602ffd4fdc2",
       "path": "solvers/pysat/skills/dcp-pysat",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "955f4fb85c5c319375336441adc22a860ca30df3",
+      "commit": "59dfb266d8377fd4534ade84939c97ec04eb200c",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }

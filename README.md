@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-03](https://img.shields.io/badge/updated-2026--11--03-blue)](skills.lock.json)
+[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-05](https://img.shields.io/badge/updated-2026--11--05-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -79,9 +79,9 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-paramita`](skills/dcp-paramita/) | python | Paramita SAT and MaxSAT framework, used from Python (paramita 1.2.0) - Bool variables, propositional operators and pseudo-Boolean constraints from paramita.modelling, integers encoded as Booleans, satisfiability and all-solutions enumeration with CaDiCaL, and optimisation as MaxSAT with EvalMaxSAT2022. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/f66eea6f48506644c832a098ee334c3fe38b10ee/solvers/paramita/skills/dcp-paramita) |
+| [`dcp-paramita`](skills/dcp-paramita/) | python | Paramita SAT and MaxSAT framework, used from Python (paramita 1.2.0) - Bool variables, propositional operators and pseudo-Boolean constraints from paramita.modelling, integers encoded as Booleans, satisfiability and all-solutions enumeration with CaDiCaL, and optimisation as MaxSAT with EvalMaxSAT2022. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/ff6f75a38b724432e901924d6f1adf65a3c53f74/solvers/paramita/skills/dcp-paramita) |
 | [`dcp-pindakaas`](skills/dcp-pindakaas/) | rust | Pindakaas, a library that encodes Boolean and integer constraints (clauses, propositional formulas, linear, pseudo-Boolean and cardinality constraints, integer variables) into CNF and solves them with the bundled CaDiCaL SAT solver, used from Rust (crate pindakaas 0.6.0). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/392127fbe7859966263b1b2671b3221cb5a799c6/solvers/pindakaas/skills/dcp-pindakaas) |
-| [`dcp-pysat`](skills/dcp-pysat/) | python | PySAT (python-sat), a Python library for SAT and MaxSAT modelling with CNF and WCNF formulas, cardinality and pseudo-Boolean encoders, finite-domain integers (pysat.integer), SAT solvers such as Glucose, and the RC2 MaxSAT solver. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/62aa7d4a1977b8351696d36b62fcfc7b1a364622/solvers/pysat/skills/dcp-pysat) |
+| [`dcp-pysat`](skills/dcp-pysat/) | python | PySAT (python-sat), a Python library for SAT and MaxSAT modelling with CNF and WCNF formulas, cardinality and pseudo-Boolean encoders, finite-domain integers (pysat.integer), SAT solvers such as Glucose, and the RC2 MaxSAT solver. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/98cbdce949d7a92b4a558e55357bd9d7822f3da8/solvers/pysat/skills/dcp-pysat) |
 
 ### Satisfiability modulo theories (SMT)
 
@@ -113,7 +113,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-hermax`](skills/dcp-hermax/) | python | hermax is a MaxSAT modelling library (hermax.model.Model over PySAT) with Boolean and integer variables, native linear, pseudo-Boolean, table and scheduling constraints, a minimised objective compiled to weighted soft clauses, and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/becd08f2dccb67ac658cbd2bbdb90d2f36abbd50/solvers/hermax/skills/dcp-hermax) |
+| [`dcp-hermax`](skills/dcp-hermax/) | python | hermax is a MaxSAT modelling library (hermax.model.Model over PySAT) with Boolean and integer variables, native linear, pseudo-Boolean, table and scheduling constraints, a minimised objective compiled to weighted soft clauses, and solution enumeration. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/809ab6ddf1f34d17c2f21f5849b7f281d72d419a/solvers/hermax/skills/dcp-hermax) |
 
 ### Pseudo-Boolean (PB)
 
