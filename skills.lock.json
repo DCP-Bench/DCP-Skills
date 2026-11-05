@@ -85,6 +85,13 @@
       "path": "solvers/hermax/skills/dcp-hermax",
       "source": "dcp-rosetta"
     },
+    "dcp-hexaly": {
+      "commit": "3542ec0f3109fc48a6d0f3d1560a7a2aa14995ce",
+      "commit_date": "2026-11-03",
+      "digest": "sha256:b67f6f47cf3d8ca1b366b2a833881245fbdca04c432da1faa3c47c7f583bf448",
+      "path": "solvers/hexaly/skills/dcp-hexaly",
+      "source": "dcp-rosetta"
+    },
     "dcp-highs": {
       "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
       "commit_date": "2026-10-27",
@@ -221,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "f66eea6f48506644c832a098ee334c3fe38b10ee",
+      "commit": "955f4fb85c5c319375336441adc22a860ca30df3",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }

@@ -25,6 +25,7 @@
         "./skills/dcp-gecode",
         "./skills/dcp-gurobi",
         "./skills/dcp-hermax",
+        "./skills/dcp-hexaly",
         "./skills/dcp-highs",
         "./skills/dcp-huub",
         "./skills/dcp-idp-z3",
