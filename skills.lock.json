@@ -37,9 +37,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-docplex": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:a2abec599056b34a92fafe130ca67a5db78a012d2d55296fde0c4ef6ccb9643e",
+      "commit": "793b6714f01db394f6b701ab6e94a42c51cf0ee9",
+      "commit_date": "2026-11-11",
+      "digest": "sha256:2f17cb525debd1636b1dc189a45bf310d5d7e4e0fa90d20262bcbfa4dbb00710",
       "path": "solvers/docplex/skills/dcp-docplex",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "270dc4f8473eef8eb5326969c50d7330ba872a19",
+      "commit": "793b6714f01db394f6b701ab6e94a42c51cf0ee9",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
