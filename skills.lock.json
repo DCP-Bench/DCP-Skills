@@ -135,9 +135,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-minizinc": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:dd99a23498654f9ca2bc312055d84b62dbc21cf401d7ece1d59f70514e8084e6",
+      "commit": "e7a2371c9fa6c5590474cb198549d9341e4af5a3",
+      "commit_date": "2026-11-11",
+      "digest": "sha256:256be0304a9c6ffbe63f5547304aa032c1639b0f070e769586546fc9a020eff4",
       "path": "solvers/minizinc/skills/dcp-minizinc",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "793b6714f01db394f6b701ab6e94a42c51cf0ee9",
+      "commit": "e7a2371c9fa6c5590474cb198549d9341e4af5a3",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
