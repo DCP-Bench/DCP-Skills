@@ -184,9 +184,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-pycsp3": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:e719b0b4bce269597562b46831ff48cfc177c42c929d5e9d90e165c5bb666f48",
+      "commit": "270dc4f8473eef8eb5326969c50d7330ba872a19",
+      "commit_date": "2026-11-11",
+      "digest": "sha256:8ef3743e60d68a302024f6b572a8742532aeffff12d6fe0226d6e76fe10ca6d7",
       "path": "solvers/pycsp3/skills/dcp-pycsp3",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "d09cd7b7fd7dc09566000ab06884c4094817e433",
+      "commit": "270dc4f8473eef8eb5326969c50d7330ba872a19",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
