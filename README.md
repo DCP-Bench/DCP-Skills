@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-05](https://img.shields.io/badge/updated-2026--11--05-blue)](skills.lock.json)
+[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-11](https://img.shields.io/badge/updated-2026--11--11-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -96,7 +96,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
 | [`dcp-docplex`](skills/dcp-docplex/) | python | DOcplex (docplex.mp), the Python modelling API of IBM CPLEX, for mixed-integer linear models with integer, binary and continuous variables, linear, indicator and logical constraints, optimisation and enumeration of solutions. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/docplex/skills/dcp-docplex) |
-| [`dcp-gurobi`](skills/dcp-gurobi/) | python | Gurobi, a solver for linear, mixed-integer and indicator-constrained optimisation models (branch-and-cut), used from Python (gurobipy). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/gurobi/skills/dcp-gurobi) |
+| [`dcp-gurobi`](skills/dcp-gurobi/) | python | Gurobi, a solver for linear, mixed-integer and indicator-constrained optimisation models (branch-and-cut), used from Python (gurobipy). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/d09cd7b7fd7dc09566000ab06884c4094817e433/solvers/gurobi/skills/dcp-gurobi) |
 | [`dcp-highs`](skills/dcp-highs/) | cpp | HiGHS, a mixed-integer linear programming solver, used from C++ through its Highs class (built from source), covering columns and rows, integrality, objective, run(), model status, and enumerating solutions with no-goods. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/highs/skills/dcp-highs) |
 | [`dcp-jump`](skills/dcp-jump/) | julia | JuMP, the Julia modelling language for optimisation, with HiGHS as its mixed-integer linear programming solver (Julia, packages JuMP and HiGHS.jl). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/2df816fb3fd81ec6f63cd535bd8a9e0930af5233/solvers/jump/skills/dcp-jump) |
 | [`dcp-pulp`](skills/dcp-pulp/) | python | PuLP, a modelling library for linear and mixed-integer programs solved by the CBC solver it bundles, used from Python (PuLP 3.x). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/4352b497ba97a26106919dfea43ef75f36c3a17e/solvers/pulp/skills/dcp-pulp) |

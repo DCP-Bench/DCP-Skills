@@ -72,9 +72,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-gurobi": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:9f5f8885a6532db21bb8fc4ef16646120b332ccf63d3e49845b5343b3e701b7b",
+      "commit": "d09cd7b7fd7dc09566000ab06884c4094817e433",
+      "commit_date": "2026-11-11",
+      "digest": "sha256:49ec23569d56a158fff0deb6bd312400c61a107386444adf8f06a6eac200893a",
       "path": "solvers/gurobi/skills/dcp-gurobi",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "77aef1885376f35e49f44f864292e02e756d4852",
+      "commit": "d09cd7b7fd7dc09566000ab06884c4094817e433",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
