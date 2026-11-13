@@ -156,9 +156,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-picat": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:803433e9a2175a96539ee9f27d2ddb5968757275eca8941432cbc6bf08f55c49",
+      "commit": "5e0a025d5bc28887b51bb4ec486de722f045c7e3",
+      "commit_date": "2026-11-13",
+      "digest": "sha256:41028380f825d23c328a3b2d20d55900832f24eb923fc632f415f6f498c3c9f5",
       "path": "solvers/picat/skills/dcp-picat",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "4a220116a330df694e959d74851a6993d8e4a4f8",
+      "commit": "5e0a025d5bc28887b51bb4ec486de722f045c7e3",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
