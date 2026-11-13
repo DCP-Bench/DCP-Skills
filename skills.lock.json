@@ -16,9 +16,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-clingo": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:6ca0de94136e8ced6129e15c38a0f846df443d204bb3255055841d4bbdd28b6a",
+      "commit": "40ae02d8c26fd7bffb70affa7b1a7c1bc303aeaa",
+      "commit_date": "2026-11-13",
+      "digest": "sha256:96dc895c602c9077fa2a82e576091007806229b5808db1756829aa442d491e91",
       "path": "solvers/clingo/skills/dcp-clingo",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "5e0a025d5bc28887b51bb4ec486de722f045c7e3",
+      "commit": "40ae02d8c26fd7bffb70affa7b1a7c1bc303aeaa",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }

@@ -107,7 +107,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-clingo`](skills/dcp-clingo/) | asp | clingo, an answer set programming (ASP) system. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/clingo/skills/dcp-clingo) |
+| [`dcp-clingo`](skills/dcp-clingo/) | asp | clingo, an answer set programming (ASP) system. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/40ae02d8c26fd7bffb70affa7b1a7c1bc303aeaa/solvers/clingo/skills/dcp-clingo) |
 
 ### Maximum satisfiability (MaxSAT)
 
