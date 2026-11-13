@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-11](https://img.shields.io/badge/updated-2026--11--11-blue)](skills.lock.json)
+[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-13](https://img.shields.io/badge/updated-2026--11--13-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -72,7 +72,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-eclipse`](skills/dcp-eclipse/) | prolog | ECLiPSe, the ECLiPSe Constraint Logic Programming system (version 7.x), used through its native Prolog interface (eclipse launcher, .ecl files), for finite-domain constraint satisfaction and optimisation in Prolog syntax with libraries ic, ic_global, gfd (Gecode), branch_and_bound and timeout. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/eclipse/skills/dcp-eclipse) |
+| [`dcp-eclipse`](skills/dcp-eclipse/) | prolog | ECLiPSe, the ECLiPSe Constraint Logic Programming system (version 7.x), used through its native Prolog interface (eclipse launcher, .ecl files), for finite-domain constraint satisfaction and optimisation in Prolog syntax with libraries ic, ic_global, gfd (Gecode), branch_and_bound and timeout. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/4a220116a330df694e959d74851a6993d8e4a4f8/solvers/eclipse/skills/dcp-eclipse) |
 | [`dcp-swipl`](skills/dcp-swipl/) | prolog | SWI-Prolog CLP(FD), the finite-domain constraint solver in library(clpfd) of SWI-Prolog 9.x, for constraint satisfaction and optimisation in Prolog. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/swipl/skills/dcp-swipl) |
 
 ### Boolean satisfiability (SAT)
