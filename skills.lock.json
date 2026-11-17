@@ -51,9 +51,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-essence-prime": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:7bad47313bfa43b21f62b74c81fce52d31107ed7ad3587c8837d1ed89d43d367",
+      "commit": "55450ffb4e32433e0b8be0a7ad2c1385b6ef87c7",
+      "commit_date": "2026-11-17",
+      "digest": "sha256:9207f96c752c9719b571f9a39e8191bccaf7959786ef76a716a06be1f4ea5530",
       "path": "solvers/essence_prime/skills/dcp-essence-prime",
       "source": "dcp-rosetta"
     },
@@ -107,9 +107,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-idp-z3": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:a3a011a235b7458c7d2a54693cb9e60f18ec9295dc700073d0c567368a8943d5",
+      "commit": "f9236b67b722458261d3507cfdb1fda0ac74f85d",
+      "commit_date": "2026-11-17",
+      "digest": "sha256:924382bcc8f5160d23af6547f1844a47fe8a1ebe34d07b82e66e7974010ee974",
       "path": "solvers/idp_z3/skills/dcp-idp-z3",
       "source": "dcp-rosetta"
     },
@@ -212,9 +212,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-swipl": {
-      "commit": "8356c30bf653991ea7a1321454340cd17bdd5a92",
-      "commit_date": "2026-10-27",
-      "digest": "sha256:7d7b8d23f77266c374ade805f0d76d0ed9e32e3a4051d88916434379f6cbc508",
+      "commit": "dc2efda4bd33ea7b9e8328b43ce661feacda1bf6",
+      "commit_date": "2026-11-17",
+      "digest": "sha256:5202b9a88467c083ad232fcb9736e8479248bf4a4e88a6642231f154ed8bdbf4",
       "path": "solvers/swipl/skills/dcp-swipl",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "40ae02d8c26fd7bffb70affa7b1a7c1bc303aeaa",
+      "commit": "dc2efda4bd33ea7b9e8328b43ce661feacda1bf6",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }
