@@ -58,9 +58,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-exact": {
-      "commit": "5611ab89b278990e2a240d46450b1b0131422ac8",
-      "commit_date": "2026-11-03",
-      "digest": "sha256:8d20dc367d591d74ecdfd0c0b872a74496b0a936f718d12d7f7c4871067526b0",
+      "commit": "4e17c4effa144d4a75d14f02bd57ce8e80bdaa20",
+      "commit_date": "2026-11-24",
+      "digest": "sha256:4e8f66285b8b88e9caa69f1e092de15d9ada28f3fe6151198b2b0a6232eb28ce",
       "path": "solvers/exact/skills/dcp-exact",
       "source": "dcp-rosetta"
     },
@@ -198,9 +198,9 @@
       "source": "dcp-rosetta"
     },
     "dcp-python-mip": {
-      "commit": "4ec85f77cb7d85c0d0c8a42bdefaecc9f493379e",
-      "commit_date": "2026-11-03",
-      "digest": "sha256:77c7874ea5129e7d91c862cdad727198f30a241e9697c0cf950478d71e0748e7",
+      "commit": "d488a8a69e91ef5158f0abd4bc1aa41fcff1ee59",
+      "commit_date": "2026-11-24",
+      "digest": "sha256:cf1072cfcff20f8726c9050dedb59d5e6db72416c53b7d9a26b9448e39ca24a5",
       "path": "solvers/python_mip/skills/dcp-python-mip",
       "source": "dcp-rosetta"
     },
@@ -228,7 +228,7 @@
   },
   "sources": {
     "dcp-rosetta": {
-      "commit": "dc2efda4bd33ea7b9e8328b43ce661feacda1bf6",
+      "commit": "a4df771a2a8b78b1cae4ee2dc1b2b6095d96b787",
       "ref": "main",
       "repo": "DCP-Bench/DCP-Rosetta"
     }

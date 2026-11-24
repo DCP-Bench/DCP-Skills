@@ -3,7 +3,7 @@
 [![skills.sh](https://skills.sh/b/DCP-Bench/DCP-Skills)](https://skills.sh/DCP-Bench/DCP-skills)
 [![Checks](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml/badge.svg)](https://github.com/DCP-Bench/DCP-Skills/actions/workflows/checks.yml)
 <!-- badges:start -->
-[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-17](https://img.shields.io/badge/updated-2026--11--17-blue)](skills.lock.json)
+[![solvers: 32](https://img.shields.io/badge/solvers-32-blue)](#catalog) [![paradigms: 8](https://img.shields.io/badge/paradigms-8-blue)](#catalog) [![languages: 11](https://img.shields.io/badge/languages-11-blue)](#catalog) [![updated: 2026-11-24](https://img.shields.io/badge/updated-2026--11--24-blue)](skills.lock.json)
 <!-- badges:end -->
 
 A collection of general purpose [agent skills](https://agentskills.io) for constraint (optimisation) solvers. 
@@ -100,7 +100,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 | [`dcp-highs`](skills/dcp-highs/) | cpp | HiGHS, a mixed-integer linear programming solver, used from C++ through its Highs class (built from source), covering columns and rows, integrality, objective, run(), model status, and enumerating solutions with no-goods. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/8356c30bf653991ea7a1321454340cd17bdd5a92/solvers/highs/skills/dcp-highs) |
 | [`dcp-jump`](skills/dcp-jump/) | julia | JuMP, the Julia modelling language for optimisation, with HiGHS as its mixed-integer linear programming solver (Julia, packages JuMP and HiGHS.jl). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/2df816fb3fd81ec6f63cd535bd8a9e0930af5233/solvers/jump/skills/dcp-jump) |
 | [`dcp-pulp`](skills/dcp-pulp/) | python | PuLP, a modelling library for linear and mixed-integer programs solved by the CBC solver it bundles, used from Python (PuLP 3.x). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/4352b497ba97a26106919dfea43ef75f36c3a17e/solvers/pulp/skills/dcp-pulp) |
-| [`dcp-python-mip`](skills/dcp-python-mip/) | python | Python-MIP (import mip), a Python library for linear and mixed-integer programs, solved by its default solver CBC. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/4ec85f77cb7d85c0d0c8a42bdefaecc9f493379e/solvers/python_mip/skills/dcp-python-mip) |
+| [`dcp-python-mip`](skills/dcp-python-mip/) | python | Python-MIP (import mip), a Python library for linear and mixed-integer programs, solved by its default solver CBC. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/d488a8a69e91ef5158f0abd4bc1aa41fcff1ee59/solvers/python_mip/skills/dcp-python-mip) |
 | [`dcp-scip`](skills/dcp-scip/) | python | SCIP, a branch-and-cut mixed-integer and nonlinear solver with native general constraints (and/or/xor, indicator, cardinality, SOS, cumulative, nonlinear), used from Python (PySCIPOpt, pip package and import `pyscipopt`). | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/c51724b280bf4e14d6ab15e560341d8cedb51583/solvers/scip/skills/dcp-scip) |
 
 ### Answer set programming (ASP)
@@ -119,7 +119,7 @@ Report problems with a skill, and propose changes to one, in [DCP-Rosetta](https
 
 | Skill | Interfaces | What it covers | Source |
 | --- | --- | --- | --- |
-| [`dcp-exact`](skills/dcp-exact/) | python | Exact, a pseudo-Boolean and integer linear solver with Python bindings (package exact, import exact, class Exact) that builds models from named integer and 0/1 variables, linear constraints, reification and multiplication. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/5611ab89b278990e2a240d46450b1b0131422ac8/solvers/exact/skills/dcp-exact) |
+| [`dcp-exact`](skills/dcp-exact/) | python | Exact, a pseudo-Boolean and integer linear solver with Python bindings (package exact, import exact, class Exact) that builds models from named integer and 0/1 variables, linear constraints, reification and multiplication. | [DCP-Rosetta](https://github.com/DCP-Bench/DCP-Rosetta/tree/4e17c4effa144d4a75d14f02bd57ce8e80bdaa20/solvers/exact/skills/dcp-exact) |
 <!-- catalog:end -->
 
 ## License
